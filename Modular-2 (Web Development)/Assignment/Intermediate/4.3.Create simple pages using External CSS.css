@@ -1,0 +1,15 @@
+body{
+    background-color: lightgreen;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+h1{
+    color: blue;
+}
+p{
+    color: crimson;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.1rem;
+}
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<Style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    main{
+        margin: 50px auto;
+        border: 5px solid red;
+        display: grid;
+        color: black;
+        grid-template-rows: 100px 80px 80px 60px;
+        grid-template-columns:30% 50% 30% 40%;
+        grid-gap:05px;
+
+    
+
+    }
+    .div1{
+        background-color: aqua;
+        grid-column: 1/-1;
+    }
+    .div2{
+        background-color: aquamarine;
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .div3{ background-color: bisque;
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    .div4{
+        background-color: blueviolet;
+        grid-row: 2/4;
+        grid-column: 2/3;
+    }
+    .div5{
+        background-color: brown;
+        grid-row: 2/4;
+        grid-column: 3/4;
+    }
+    .div6{
+        background-color: blanchedalmond;
+        grid-row: 3/4;
+        grid-column: 1/-1;
+    }
+</Style>
+<body>
+    <main>
+    <div class="div1">Header</div>
+    <div class="div2">Menu</div>
+    <div class="div3">Ad2</div>
+    <div class="div4">Main</div>
+    <div class="div5">Ad1</div>
+    <div class="div6">Footer</div>
+</main>
+</body>
+</html>

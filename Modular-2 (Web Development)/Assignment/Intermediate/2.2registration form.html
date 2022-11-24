@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Vibes Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body
+        {
+            background-color: green;
+            font-family: sans-serif;
+            font-size: 2rem;
+            text-align: center;
+            padding: 30px 10px 10px 10px;
+            height: 100vh;
+        }
+        .main{
+            width: 800px;
+            background-color: gray;
+            margin: auto;
+            padding: 30px 10px 10px 10px;
+            margin-top: 10px;
+           border-radius: 8px;
+           font-size: 2rem;
+           padding: 5px;
+        }
+        table{
+            border: 3px solid greenyellow;
+            padding: 5px;
+        }
+        h2{
+            border: 1px solid white;
+        }
+        input{
+            font-size: 1rem;
+        }
+        ::placeholder{
+            font-size: 17px;
+            color: black;
+            text-align: center;
+        }
+        button{
+            width: 60PX;
+            height: 38px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            margin: 35px 0 10px;
+            font-size: 1rem;
+            border-radius: 8px;
+            background-color: beige;
+            color: black;
+            cursor:pointer;
+        }
+        .t1{
+            text-align: right;
+        }
+        .t2{
+            text-align: left;
+        }
+    </style>
+</head>
+<body class="body">
+    <H2 id="firstheading">Good Vibes Form</H2>
+    <div class="main">
+    <form id="form", class="form">
+        <h3>
+            Tell us something positive that happened to you today.
+        </h3>
+        <table id="table">
+
+            <tr>
+                <td class="t1">Name</td>
+                <td class="t2"><input type="text" placeholder="Enter your name" name="name"></td>
+            </tr>
+            <tr>
+                <td class="t1">Email</td>
+                <td class="t2"><input type="email" placeholder="Enter your email address" name="email"></td>
+            </tr>
+            <tr>
+                <td class="t1">On a scale of 1-10,how good was it?</td>
+                <td class="t2"><input type="number" name="emotion " placeholder="Enter a nmber between 1 and 10"></td>
+            </tr>
+            <tr>
+                <td class="t1">Where did it happen?</td>
+                <td class="t2"><select name="Location">
+                    <option>At home</option>
+                    <option>At work</option>
+                    <option>On the street</option>
+                    <option>Other</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td class="t1">At whattime of day did it happen?</td>
+                <td class="t2"><input type="radio" name="time"> Morning<br>
+                <input type="radio" name="time"> Afternoon<br>
+                <input type="radio" name="time"> Evening</td>
+            </tr>
+            <tr>
+                <td class="t1">What emotions did you experience?<br>(Select all that apply)</td>
+                <td class="t2"><input type="checkbox" name="c1">Excited<br>
+                <input type="checkbox" name="c2">Humbled<br>
+                <input type="checkbox" name="c3">Elated<br>
+                <input type="checkbox" name="c4">Loved<br>
+                <input type="checkbox" name="c5">Enthusiastic<br>
+                </td>
+            </tr>
+            <tr>
+                <td class="t1">Please describe your positive experience</td>
+                <td class="t2"><textarea rows="6" cols="40" placeholder="Enter your experience here" name="experience"></textarea></td>
+            </tr>
+        </table>
+        <button type="submit" name="submitButton">submit</button>
+    </form>
+</div>
+</body>
+</html>

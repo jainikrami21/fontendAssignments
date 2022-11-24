@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="mediaquery1.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="image/Abdul_kalam_autograph logo1.png" alt="Signature" style="width: 250%;height: auto;">
+        </div>
+        <ul class="nav-links">
+            <li class="active"><a href="#"></a>HOME</li>
+            <li><a href="#"></a>ABOUT</li>
+            <li><a href="#"></a>BOOKS</li>
+            <li><a href="#"></a>IMAGES</li>
+            <li><a href="#"></a>SPEECHES</li>
+            <li><a href="#"></a>OATHS</li>
+            <li><a href="#"></a>AWARDS</li>
+            <li class="ctn"><a href="#"></a>EVENTS</li>
+        </ul>
+        <div class="menu-btn"> 
+            <img src="image/menu-btn 1.png" alt="menu-btn" style="width: 100%;height: auto;">
+        </div>
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>
+                11th President of India
+            </h2>
+            <div class="line"></div>
+            <h1>A. P. J. Abdul Kalam</h1>
+            <a href="#" class="ctn">Go To Official Site</a>
+        </div>
+    </header>
+    
+    <!-- EVENTS -->
+    <section class="events">
+        <div class="title">
+            <h1>Achievement</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="image/Young-Abdul-Kalam-left-with-Dr.-Vikram-Sarabhai.png" alt="Young-Abdul-Kalam">
+                <h4>HE WAS PART OF THE TEAM WHICH SET UP TERLS</h4>
+                <p>
+                Though Project Nandi was put in cold storage, due to it Kalam got a call from the Indian Committee for Space Research (INCOSPAR) to attend an interview at the Tata Institute of Fundamental Research (TIFR).
+                </p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="image/Abdul-Kalam-receiving-Bharat-Ratna-from-President-K.-R.-Narayanan.png" alt= "Abdul-Kalam-receiving-Bharat-Ratna">
+                <h4>HE SERVED AS THE FIRST PRINCIPAL SCIENTIFIC ADVISOR TO THE GOVERNMENT OF INDIA</h4>
+                <p>
+                After his retirement from DRDO, Kalam was appointed as the first-ever Principal Scientific Advisor (PSA) to the Government Of India from November 1999 to November 2001.
+                </p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore">
+        <div class="explore-content"> 
+            <h1>Wings of Fire</h1>
+            <div class="line"></div>
+            <p>Kalam was born on October 15, 1931, the son of a little educated boat owner in Rameswaram, Tamil Nadu. His father was also imam of the small mosque in Rameswaram. He had an unparalleled career as a defence scientist, culminating in the highest civilian award of India, Bharat Ratna. As chief of the country's defence research and development programmer, Kalam demonstrated a great, great potential for dynamics and innovations that existed in a seemingly moribund research establishment. This is the story of Kalam's own rise from obscurity and his personal and professional struggles, as well as the story of AGNI, TRISHUL, and NAG missiles that have become household names in India and that have raised the nation to the level of a missile power of international reckoning. Since independence, India has sought in various ways, self-realization, adulation, and success.</p>
+            <a href="#" class="ctn">Books List</a>
+        </div>
+    </section>
+
+    <section class="quotes">
+        <div class="row">
+             <div           class="col content-col">
+                <h1>QUOTES AND POETRY</h1>
+                <div class="line"></div>
+                <br>
+                <pre>
+                        The Vision
+
+                    I climbed and climbed
+                    Where is the peak, my Lord?
+                    I ploughed and ploughed,
+                    Where is the knowledge treasure, my Lord?
+                    I sailed and sailed,
+                    Where is the island of peace, my Lord?
+                    Almighty, bless my nation
+                    With vision and sweat resulting into happiness
+                    <br>                                             A.P.J. Abdul Kalam
+                    </pre>
+                <a href="#" class="ctn">MORE POETRY</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="image/kalam-quote-01.png" alt="QUOTES">
+                    <img src="image/kalam-quote-02.png" alt="QUOTES">
+                    <img src="image/kalam-quote-03.png" alt="">
+                    <img src="image/kalam-quote-04.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>Website designed by J.R.
+        </p>
+        <p>Content of this website has been sourced from the then website of Dr. APJ Abdul Kalam during his tenureship as the President of India.
+        </p>
+        <p>2001 - 2016 © abdulkalam.com All Rights Reserved.
+        </p>
+        <a href="#" class="ctn">WWW.WIKIPEDIA.ORG</a>
+
+    </section>
+
+    <script>
+        const menubtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menubtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>

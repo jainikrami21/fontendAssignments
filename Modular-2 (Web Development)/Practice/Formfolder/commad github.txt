@@ -1,0 +1,10 @@
+commad
+git nit
+git add
+git status
+git config --gobal user.name (given name of file)example demo
+git config --gobal user.email id
+git comit-m"New Added"
+git m-message
+git remote add origin repo link
+git push origin master/main
