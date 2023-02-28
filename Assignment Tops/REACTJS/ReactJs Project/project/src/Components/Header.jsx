@@ -1,11 +1,10 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
-import Main from "../Main";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
     <div>
-  
+      
       {/* Navbar & Carousel Start */}
       <div className="container-fluid position-relative p-0">
         <nav className="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
@@ -25,60 +24,66 @@ function Header() {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto py-0">
-              <NavLink to="/Home" className="nav-item nav-link active">
+              <NavLink to="/" className="nav-item nav-link active">
                 Home
               </NavLink>
-              <NavLink to="/About" className="nav-item nav-link">
+              <NavLink to="/about" className="nav-item nav-link">
                 About
               </NavLink>
-              <NavLink to="/Service" className="nav-item nav-link">
+              <NavLink to="/service" className="nav-item nav-link">
                 Services
               </NavLink>
               <div className="nav-item dropdown">
                 <NavLink
-                  to="/Blog"
+                  to="/blog"
                   className="nav-link dropdown-toggle"
                   data-bs-toggle="dropdown"
                 >
                   Blog
                 </NavLink>
                 <div className="dropdown-menu m-0">
-                  <NavLink to="/BlogG" className="dropdown-item">
+                  <NavLink to="/blogg" className="dropdown-item">
                     Blog Grid
                   </NavLink>
-                  <NavLink to="/BlogD" className="dropdown-item">
+                  <NavLink to="/blogd" className="dropdown-item">
                     Blog Detail
                   </NavLink>
                 </div>
               </div>
               <div className="nav-item dropdown">
                 <NavLink
-                  to="/Pages"
+                  to="/pages"
                   className="nav-link dropdown-toggle"
                   data-bs-toggle="dropdown"
                 >
                   Pages
                 </NavLink>
                 <div className="dropdown-menu m-0">
-                  <NavLink to="/Price" className="dropdown-item">
+                  <NavLink to="/price" className="dropdown-item">
                     Pricing Plan
                   </NavLink>
-                  <NavLink to="/Feature" className="dropdown-item">
+                  <NavLink to="/feature" className="dropdown-item">
                     Our features
                   </NavLink>
-                  <NavLink to="/Team" className="dropdown-item">
+                  <NavLink to="/team" className="dropdown-item">
                     Team Members
                   </NavLink>
-                  <NavLink to="/Testimonial" className="dropdown-item">
+                  <NavLink to="/testimonial" className="dropdown-item">
                     Testimonial
                   </NavLink>
-                  <NavLink to="/Quote" className="dropdown-item">
+                  <NavLink to="/quote" className="dropdown-item">
                     Free Quote
                   </NavLink>
                 </div>
               </div>
-              <NavLink to="/Contact" className="nav-item nav-link">
+              <NavLink to="/contact" className="nav-item nav-link">
                 Contact
+              </NavLink>
+              <NavLink to="/Login" className="nav-item nav-link">
+                Login
+              </NavLink>
+              <NavLink to="/Signup" className="nav-item nav-link">
+                Register
               </NavLink>
             </div>
             <butaton

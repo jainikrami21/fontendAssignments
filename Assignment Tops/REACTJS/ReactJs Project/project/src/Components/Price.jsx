@@ -1,5 +1,6 @@
 import React from "react";
 
+
 function Price() {
   return (
     <div>
@@ -30,14 +31,14 @@ function Price() {
                   <h1 className="display-5 mb-3">
                     <small
                       className="align-top"
-                      style={{ fontSize: 22, lineHeight: 45 }}
+                      style={{ fontSize: 22, lineHeight: 3 }}
                     >
                       $
                     </small>
                     49.00
                     <small
                       className="align-bottom"
-                      style={{ fontSize: 16, lineHeight: 40 }}
+                      style={{ fontSize: 16, lineHeight: 4 }}
                     >
                       / Month
                     </small>
@@ -79,14 +80,14 @@ function Price() {
                   <h1 className="display-5 mb-3">
                     <small
                       className="align-top"
-                      style={{ fontSize: 22, lineHeight: 45 }}
+                      style={{ fontSize: 22, lineHeight: 3 }}
                     >
                       $
                     </small>
                     99.00
                     <small
                       className="align-bottom"
-                      style={{ fontSize: 16, lineHeight: 40 }}
+                      style={{ fontSize: 16, lineHeight: 4 }}
                     >
                       / Month
                     </small>
@@ -125,14 +126,14 @@ function Price() {
                   <h1 className="display-5 mb-3">
                     <small
                       className="align-top"
-                      style={{ fontSize: 22, lineHeight: 45 }}
+                      style={{ fontSize: 22, lineHeight: 3 }}
                     >
                       $
                     </small>
                     149.00
                     <small
                       className="align-bottom"
-                      style={{ fontSize: 16, lineHeight: 40 }}
+                      style={{ fontSize: 16, lineHeight: 4 }}
                     >
                       / Month
                     </small>
