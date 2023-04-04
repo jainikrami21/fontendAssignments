@@ -1,6 +1,7 @@
 <html style="--width: 1536">
   <!--<!
   [endif]--><head id="Head1">
+    <script async="" src="https://cdn.branch.io/branch-latest.min.js"></script>
     <script
       type="text/javascript"
       async=""
@@ -13,7 +14,6 @@
       src="/mriInteractions.js?v=8"
       id="mri_client_script"
     ></script>
-    <script async="" src="https://cdn.branch.io/branch-latest.min.js"></script>
     <script type="text/javascript" id="__ta_ces">
       // Write your javascript code here
       var gmg_path = location.pathname;
@@ -90,49 +90,49 @@
       /*New HTML for Webnotif
 if(location.hostname == "www.redbus.in"){
 if(gmg_path == "/"){
-  var $ = _taq.$;
-  _taq.handlers.push(['ready',function(){
-  if(_taq.getLSItem("webpush_status") != "registered" && _taq.getLSItem("webpush_status") != "denied")
-        {
-          function wp_view() {
-            _taq.handlers.push(['ready',function(){
-              _taq.events.push(['wp_notifview',{
-                'url':location.pathname,
-                'device':'Web'
-              }]);
-            }]);
-          }
-  $('body').append('<div id="gmg_wp_notif" style="width: 350px;left: 1%;z-index:9999;position: fixed;box-shadow:1px 1px 5px rgba(0,0,0,0.2); top:69px; background:#eee; padding: 10px;border: 0px solid #ccc; color: #343434; font: normal 16px/1.5 RedHotels, Arial, sans-serif, Arial, Helvetica, Tahoma;">'+'<div style="overflow: hidden;margin: 0 auto;">'+'<div style="display: inline-block;width: 68px;vertical-align: middle;height: 62px;background: #ea4c53;border-radius: 10px;margin-right: 2%;box-sizing: border-box;">'+'<img src="http://s1.rdbuz.com/trips/images/redbus_logo.png" style="padding: 13px 2px;width: 95%;">'+'</div>'+'<div style="display: inline-block;width: 73%;vertical-align: middle;">'+'<label style="display: block;font-weight: 600;margin-bottom: 8px;font-size: .95em;">Get the best out of redBus.</label>'+'<span style="display: block;font-size: .75em;color: #666;line-height: 16px;">Enable browser notifications from redBus and receive exclusive offers, price updates and much more.</span>'+'</div>'+'</div>'+'<div style="text-align: right;padding-top: .5em;">'+'<button onclick="javascript:hide_wp_request()" style="border: 0;background: none;text-decoration: underline;vertical-align: middle;font-size: .8em;margin-right: 1em;">No Thanks</button>'+'<button onclick="javascript:show_wpnotif_request()" style="padding: .3em 1.2em;text-decoration: none;text-transform: capitalize;border: none;font-size: .8em;text-align: center;background-color: #EA4C53;color: #fff;cursor: pointer;vertical-align: middle;">Receive Notifications</button>'+'</div>'+'</div>');
-        }
-        }]);
+var $ = _taq.$;
+_taq.handlers.push(['ready',function(){
+if(_taq.getLSItem("webpush_status") != "registered" && _taq.getLSItem("webpush_status") != "denied")
+     {
+       function wp_view() {
+         _taq.handlers.push(['ready',function(){
+           _taq.events.push(['wp_notifview',{
+             'url':location.pathname,
+             'device':'Web'
+           }]);
+         }]);
+       }
+$('body').append('<div id="gmg_wp_notif" style="width: 350px;left: 1%;z-index:9999;position: fixed;box-shadow:1px 1px 5px rgba(0,0,0,0.2); top:69px; background:#eee; padding: 10px;border: 0px solid #ccc; color: #343434; font: normal 16px/1.5 RedHotels, Arial, sans-serif, Arial, Helvetica, Tahoma;">'+'<div style="overflow: hidden;margin: 0 auto;">'+'<div style="display: inline-block;width: 68px;vertical-align: middle;height: 62px;background: #ea4c53;border-radius: 10px;margin-right: 2%;box-sizing: border-box;">'+'<img src="http://s1.rdbuz.com/trips/images/redbus_logo.png" style="padding: 13px 2px;width: 95%;">'+'</div>'+'<div style="display: inline-block;width: 73%;vertical-align: middle;">'+'<label style="display: block;font-weight: 600;margin-bottom: 8px;font-size: .95em;">Get the best out of redBus.</label>'+'<span style="display: block;font-size: .75em;color: #666;line-height: 16px;">Enable browser notifications from redBus and receive exclusive offers, price updates and much more.</span>'+'</div>'+'</div>'+'<div style="text-align: right;padding-top: .5em;">'+'<button onclick="javascript:hide_wp_request()" style="border: 0;background: none;text-decoration: underline;vertical-align: middle;font-size: .8em;margin-right: 1em;">No Thanks</button>'+'<button onclick="javascript:show_wpnotif_request()" style="padding: .3em 1.2em;text-decoration: none;text-transform: capitalize;border: none;font-size: .8em;text-align: center;background-color: #EA4C53;color: #fff;cursor: pointer;vertical-align: middle;">Receive Notifications</button>'+'</div>'+'</div>');
+     }
+     }]);
 }
 }*/
 
       /*if(location.hostname == "m.redbus.in"){
-  if(gmg_path == "/hotels/"){
-    if(_taq.getLSItem("webpush_status") != "registered" && _taq.getLSItem("webpush_status") != "denied")
-        {
-    _taq.$('body').append('<div id="gmg_wp_notif" style="width: 96%;p;padding: 2%;color: #343434;bottom: 0px;position:fixed;z-index: 100;box-sizing: content-box;font: normal 16px/1.5 RedHotels, Arial, sans-serif, Arial, Helvetica, Tahoma;background: #eee;box-shadow: 0 0px 10px #999;">'+'<div style="overflow: hidden;margin: 0 auto;">'+'<div style="display: inline-block;width: 68px;vertical-align: middle;height: 62px;background: #ea4c53;border-radius: 10px;margin-right: 2%;box-sizing: border-box;">'+'<img src="http://s1.rdbuz.com/trips/images/redbus_logo.png" style="padding: 13px 2px;width: 95%;">'+'</div>'+'<div style="display: inline-block;width: 73%;vertical-align: middle;">'+'<label style="display: block;font-weight: 600;margin-bottom: 8px;font-size: .95em;">Get the best out of redBus.</label>'+'<span style="display: block;font-size: .75em;color: #666;line-height: 16px;">Enable browser notifications from redBus and receive exclusive offers, price updates and much more.</span>'+'</div>'+'</div>'+'<div style="text-align: right;padding-top: .5em;">'+'<button onclick="javascript:hide_wp_request()" style="border: 0;background: none;text-decoration: underline;vertical-align: middle;font-size: .8em;margin-right: 1em;">No Thanks</button>'+'<button onclick="javascript:show_wp_request()" style="padding: .3em 1.2em;text-decoration: none;text-transform: capitalize;border: none;font-size: .8em;text-align: center;background-color: #EA4C53;color: #fff;cursor: pointer;vertical-align: middle;">Receive Notifications</button>'+'</div>'+'</div>');
-        }
-  }
+if(gmg_path == "/hotels/"){
+ if(_taq.getLSItem("webpush_status") != "registered" && _taq.getLSItem("webpush_status") != "denied")
+     {
+ _taq.$('body').append('<div id="gmg_wp_notif" style="width: 96%;p;padding: 2%;color: #343434;bottom: 0px;position:fixed;z-index: 100;box-sizing: content-box;font: normal 16px/1.5 RedHotels, Arial, sans-serif, Arial, Helvetica, Tahoma;background: #eee;box-shadow: 0 0px 10px #999;">'+'<div style="overflow: hidden;margin: 0 auto;">'+'<div style="display: inline-block;width: 68px;vertical-align: middle;height: 62px;background: #ea4c53;border-radius: 10px;margin-right: 2%;box-sizing: border-box;">'+'<img src="http://s1.rdbuz.com/trips/images/redbus_logo.png" style="padding: 13px 2px;width: 95%;">'+'</div>'+'<div style="display: inline-block;width: 73%;vertical-align: middle;">'+'<label style="display: block;font-weight: 600;margin-bottom: 8px;font-size: .95em;">Get the best out of redBus.</label>'+'<span style="display: block;font-size: .75em;color: #666;line-height: 16px;">Enable browser notifications from redBus and receive exclusive offers, price updates and much more.</span>'+'</div>'+'</div>'+'<div style="text-align: right;padding-top: .5em;">'+'<button onclick="javascript:hide_wp_request()" style="border: 0;background: none;text-decoration: underline;vertical-align: middle;font-size: .8em;margin-right: 1em;">No Thanks</button>'+'<button onclick="javascript:show_wp_request()" style="padding: .3em 1.2em;text-decoration: none;text-transform: capitalize;border: none;font-size: .8em;text-align: center;background-color: #EA4C53;color: #fff;cursor: pointer;vertical-align: middle;">Receive Notifications</button>'+'</div>'+'</div>');
+     }
+}
 }
 
 
 if(location.hostname == "m.redbus.in"){
-  if(gmg_path == "/"){
-    if(_taq.getLSItem("webpush_status") != "registered" && _taq.getLSItem("webpush_status") != "denied")
-        {
-          function wp_view() { 
-            _taq.handlers.push(['ready',function(){
-              _taq.events.push(['wp_notifview',{
-                'url':location.pathname,
-                'device':'mobile'
-              }]);
-            }]);
-          }
-    _taq.$('body').append('<div id="gmg_wp_notif" style="width: 96%;p;padding: 2%;color: #343434;bottom: 0px;position:fixed;z-index: 100;box-sizing: content-box;font: normal 16px/1.5 RedHotels, Arial, sans-serif, Arial, Helvetica, Tahoma;background: #eee;box-shadow: 0 0px 10px #999;">'+'<div style="overflow: hidden;margin: 0 auto;">'+'<div style="display: inline-block;width: 68px;vertical-align: middle;height: 62px;background: #ea4c53;border-radius: 10px;margin-right: 2%;box-sizing: border-box;">'+'<img src="http://s1.rdbuz.com/trips/images/redbus_logo.png" style="padding: 13px 2px;width: 95%;height:59px;">'+'</div>'+'<div style="display: inline-block;width: 73%;vertical-align: middle;">'+'<label style="display: block;font-weight: 600;margin-bottom: 8px;font-size: .95em;">Get the best out of redBus.</label>'+'<span style="display: block;font-size: .75em;color: #666;line-height: 16px;">Enable browser notifications from redBus and receive exclusive offers, price updates and much more.</span>'+'</div>'+'</div>'+'<div style="text-align: right;padding-top: .5em;">'+'<button onclick="javascript:hide_wp_request()" style="border: 0;background: none;text-decoration: underline;vertical-align: middle;font-size: .8em;margin-right: 1em;">No Thanks</button>'+'<button onclick="javascript:show_wpnotif_request()" style="padding: .3em 1.2em;text-decoration: none;text-transform: capitalize;border: none;font-size: .8em;text-align: center;background-color: #EA4C53;color: #fff;cursor: pointer;vertical-align: middle;">Receive Notifications</button>'+'</div>'+'</div>');
-        }
-  }
+if(gmg_path == "/"){
+ if(_taq.getLSItem("webpush_status") != "registered" && _taq.getLSItem("webpush_status") != "denied")
+     {
+       function wp_view() { 
+         _taq.handlers.push(['ready',function(){
+           _taq.events.push(['wp_notifview',{
+             'url':location.pathname,
+             'device':'mobile'
+           }]);
+         }]);
+       }
+ _taq.$('body').append('<div id="gmg_wp_notif" style="width: 96%;p;padding: 2%;color: #343434;bottom: 0px;position:fixed;z-index: 100;box-sizing: content-box;font: normal 16px/1.5 RedHotels, Arial, sans-serif, Arial, Helvetica, Tahoma;background: #eee;box-shadow: 0 0px 10px #999;">'+'<div style="overflow: hidden;margin: 0 auto;">'+'<div style="display: inline-block;width: 68px;vertical-align: middle;height: 62px;background: #ea4c53;border-radius: 10px;margin-right: 2%;box-sizing: border-box;">'+'<img src="http://s1.rdbuz.com/trips/images/redbus_logo.png" style="padding: 13px 2px;width: 95%;height:59px;">'+'</div>'+'<div style="display: inline-block;width: 73%;vertical-align: middle;">'+'<label style="display: block;font-weight: 600;margin-bottom: 8px;font-size: .95em;">Get the best out of redBus.</label>'+'<span style="display: block;font-size: .75em;color: #666;line-height: 16px;">Enable browser notifications from redBus and receive exclusive offers, price updates and much more.</span>'+'</div>'+'</div>'+'<div style="text-align: right;padding-top: .5em;">'+'<button onclick="javascript:hide_wp_request()" style="border: 0;background: none;text-decoration: underline;vertical-align: middle;font-size: .8em;margin-right: 1em;">No Thanks</button>'+'<button onclick="javascript:show_wpnotif_request()" style="padding: .3em 1.2em;text-decoration: none;text-transform: capitalize;border: none;font-size: .8em;text-align: center;background-color: #EA4C53;color: #fff;cursor: pointer;vertical-align: middle;">Receive Notifications</button>'+'</div>'+'</div>');
+     }
+}
 }*/
 
       function show_wpnotif_request() {
@@ -153,16 +153,16 @@ if(location.hostname == "m.redbus.in"){
 
       /*Webpush Request for DESKTOP #Disabled for custom popup
 if (window.location.hostname == 'www.redbus.in') {
-  //Old conditions
-  /*gmg_path == ('/') || gmg_path.indexOf('/travels/') === 0 || gmg_path.indexOf('/bus-tickets/') === 0 ||
-    gmg_path.indexOf('/buses/') === 0 || gmg_path.indexOf('/online-booking/') === 0
-  if (gmg_path.includes('/Ticket/ShowTicket')) {
-    _taq.handlers.push(['ready', function() {
-      if (_taq.getLSItem('webpush_status') == undefined || _taq.getLSItem('webpush_status') == '' || _taq.getLSItem('webpush_status') != 'registered' || _taq.getLSItem('webpush_status') != 'blocked') {
-        _taq.do_webpush_registration();
-      }
-    }]);
-  }
+//Old conditions
+/*gmg_path == ('/') || gmg_path.indexOf('/travels/') === 0 || gmg_path.indexOf('/bus-tickets/') === 0 ||
+ gmg_path.indexOf('/buses/') === 0 || gmg_path.indexOf('/online-booking/') === 0
+if (gmg_path.includes('/Ticket/ShowTicket')) {
+ _taq.handlers.push(['ready', function() {
+   if (_taq.getLSItem('webpush_status') == undefined || _taq.getLSItem('webpush_status') == '' || _taq.getLSItem('webpush_status') != 'registered' || _taq.getLSItem('webpush_status') != 'blocked') {
+     _taq.do_webpush_registration();
+   }
+ }]);
+}
 }*/
       function hide_wp_request() {
         _taq.$("#gmg_wp_notif").css("display", "none");
@@ -185,12 +185,12 @@ if (window.location.hostname == 'www.redbus.in') {
       }
       /*Webpush Request for MOBILE-WEB Disabled for custom popup
 if(window.location.hostname=='m.redbus.in'){
-  //location.pathname=='/hotels/' || location.pathname=='/'
-  if(gmg_path.includes('/showTicket')){
-    _taq.handlers.push(['ready',function(){
-      _taq.do_webpush_registration();
-    }]);
-  }
+//location.pathname=='/hotels/' || location.pathname=='/'
+if(gmg_path.includes('/showTicket')){
+ _taq.handlers.push(['ready',function(){
+   _taq.do_webpush_registration();
+ }]);
+}
 }*/
 
       if (
@@ -206,67 +206,67 @@ if(window.location.hostname=='m.redbus.in'){
       }
       /*
 if(location.pathname == '/Booking/failureHandler.aspx' && location.host=='www.redbus.in'){
-  _taq.handlers.push(['ready',function(){
-    if($('.trav-title').size()>3){
-      _taq.events.push(['GFT details',{
-        'journey':'two-way',
-        'refno':$('.reason:first > strong:last').text().replace(/[^0-9]/g, ""),
-        'amount':parseFloat($('div.reason>div.LB').text().match(/Rs\.([0-9\.]+)\/\-/)[1]),
-        'toSource':$('.source-dest:first >span:first').text(),
-        'toDestination':$('.source-dest:first >span:last').text(),
-        'toFare':parseFloat($('.fare-detr:first > span:last').text().match(/R[Ss]\.([0-9\.]+)\/\-/)[1]),
-        'toTravelsName':$('.travel-name:first').text(),
-        'toDOJ':$('dt[class^=details]:first > span:first').text(),
-        'toSeats':$('dt[class^=details]:first > span:last').text(),
-        'toBP':$('dt[class^=last]:first').text(),
-        'frmSource':$('.source-dest:last >span:first').text(),
-        'frmDestination':$('.source-dest:last >span:last').text(),
-        'frmFare':parseFloat($('.fare-det:last > span:last').text().match(/R[Ss]\.([0-9\.]+)\/\-/)[1]),
-        'frmTravelsName':$('.trav-name:last').text(),
-        'frmDOJ':$('dt[class^=details]:last > span:first').text(),
-        'frmSeats':$('dt[class^=details]:last > span:last').text(),
-        'frmBP':$('dt[class^=last]:last').text()
-      }]);
-    }
-    if($('.travel-title').size()==3){
-      _taq.event.push(['GFT details',{
-        'journey':'one-way',
-        'refno':$('.reason:first > strong:last').text().replace(/[^0-9]/g, ""),
-        'amount':parseFloat($('div.reason>div.LB').text().match(/Rs\.([0-9\.]+)\/\-/)[1]),
-        'toSource':$('.source-dest:first >span:first').text(),
-        'toDestination':$('.source-dest:first >span:last').text(),
-        'toFare':parseFloat($('.fare').text().replace(/[^0-9]/g,"")),
-        'toTravelsName':$('.trav-name:first').text(),
-        'toDOJ':$('dt[class^=details]:first > span:first').text(),
-        'toSeats':$('dt[class^=details]:first > span:last').text(),
-        'toBP':$('dt[class^=last]:first').text(),
-        'frmSource':'-',
-        'frmDestination':'-',
-        'frmFare':'-',
-        'frmTravelsName':'-',
-        'frmDOJ':'-',
-        'frmSeats':'-',
-        'frmBP':'-'
-      }]);
-    }
-  }]);
+_taq.handlers.push(['ready',function(){
+ if($('.trav-title').size()>3){
+   _taq.events.push(['GFT details',{
+     'journey':'two-way',
+     'refno':$('.reason:first > strong:last').text().replace(/[^0-9]/g, ""),
+     'amount':parseFloat($('div.reason>div.LB').text().match(/Rs\.([0-9\.]+)\/\-/)[1]),
+     'toSource':$('.source-dest:first >span:first').text(),
+     'toDestination':$('.source-dest:first >span:last').text(),
+     'toFare':parseFloat($('.fare-detr:first > span:last').text().match(/R[Ss]\.([0-9\.]+)\/\-/)[1]),
+     'toTravelsName':$('.travel-name:first').text(),
+     'toDOJ':$('dt[class^=details]:first > span:first').text(),
+     'toSeats':$('dt[class^=details]:first > span:last').text(),
+     'toBP':$('dt[class^=last]:first').text(),
+     'frmSource':$('.source-dest:last >span:first').text(),
+     'frmDestination':$('.source-dest:last >span:last').text(),
+     'frmFare':parseFloat($('.fare-det:last > span:last').text().match(/R[Ss]\.([0-9\.]+)\/\-/)[1]),
+     'frmTravelsName':$('.trav-name:last').text(),
+     'frmDOJ':$('dt[class^=details]:last > span:first').text(),
+     'frmSeats':$('dt[class^=details]:last > span:last').text(),
+     'frmBP':$('dt[class^=last]:last').text()
+   }]);
+ }
+ if($('.travel-title').size()==3){
+   _taq.event.push(['GFT details',{
+     'journey':'one-way',
+     'refno':$('.reason:first > strong:last').text().replace(/[^0-9]/g, ""),
+     'amount':parseFloat($('div.reason>div.LB').text().match(/Rs\.([0-9\.]+)\/\-/)[1]),
+     'toSource':$('.source-dest:first >span:first').text(),
+     'toDestination':$('.source-dest:first >span:last').text(),
+     'toFare':parseFloat($('.fare').text().replace(/[^0-9]/g,"")),
+     'toTravelsName':$('.trav-name:first').text(),
+     'toDOJ':$('dt[class^=details]:first > span:first').text(),
+     'toSeats':$('dt[class^=details]:first > span:last').text(),
+     'toBP':$('dt[class^=last]:first').text(),
+     'frmSource':'-',
+     'frmDestination':'-',
+     'frmFare':'-',
+     'frmTravelsName':'-',
+     'frmDOJ':'-',
+     'frmSeats':'-',
+     'frmBP':'-'
+   }]);
+ }
+}]);
 }
 
 if(location.pathname=='/Booking/SelectBus.aspx'  && location.host=='www.redbus.in'){
-  _taq.handlers.push(['ready',function(){
-    $('.viewSeatsBtn').mousedown(fde()unction() {
-        if($(this).text()=='View Seats'){
-            _taq.events.push(['viewing_bus',{
-                'bus_name':$(this).parents('.busItem').find('h4.BusName').text(),
-                'bus_type':$(this).parents('.busItem').find('span.BusType').text(),
-                'bus_fare':parseFloat($(this).parents('.busItem').find('span.Fare').text()),
-                'bus_to':$('.From').first().text(),
-                'bus_from':$('.To').first().text(),
-                'bus_doj':$('.dateDisplay').first().text()
-            }]);
-        }
-    });
-  }]);
+_taq.handlers.push(['ready',function(){
+ $('.viewSeatsBtn').mousedown(fde()unction() {
+     if($(this).text()=='View Seats'){
+         _taq.events.push(['viewing_bus',{
+             'bus_name':$(this).parents('.busItem').find('h4.BusName').text(),
+             'bus_type':$(this).parents('.busItem').find('span.BusType').text(),
+             'bus_fare':parseFloat($(this).parents('.busItem').find('span.Fare').text()),
+             'bus_to':$('.From').first().text(),
+             'bus_from':$('.To').first().text(),
+             'bus_doj':$('.dateDisplay').first().text()
+         }]);
+     }
+ });
+}]);
 }
 */
       if (location.host == "www.redbus.in") {
@@ -291,37 +291,37 @@ if(location.pathname=='/Booking/SelectBus.aspx'  && location.host=='www.redbus.i
       }
       /*
 if(location.pathname=='/Booking/CustInfo.aspx'  && location.host=='www.redbus.in'){
-  _taq.handlers.push(['ready',function(){
-    $(document).on('click','#makepayment',function(){
-        if(($('#rrdets').css('display'))=='block'){
-            _taq.events.push(['booking_info',{
-                'cust_name':$('#NAME1').val(),
-                'booking_type':'two way',
-                'booking_date':$('.travDate').first().text(),
-                'cust_origin':$('.travCity').first().text().split(' to ')[0],
-                'cust_destination':$('.travelCity').first().text().split(' to ')[1]
-            }]);
-        }
-        else{
-            _taq.events.push(['booking_info',{
-                'cust_name':$('#NAMET1').val(),
-                'booking_type':'one way',
-                'booking_date':$('.travDate').first().text(),
-                'cust_origin':$('.travCity').first().text().split(' to ')[0],
-                'cust_destination':$('.travCity').first().text().split(' to ')[1]
-            }]);
-        }
-    });
-  }]);
+_taq.handlers.push(['ready',function(){
+ $(document).on('click','#makepayment',function(){
+     if(($('#rrdets').css('display'))=='block'){
+         _taq.events.push(['booking_info',{
+             'cust_name':$('#NAME1').val(),
+             'booking_type':'two way',
+             'booking_date':$('.travDate').first().text(),
+             'cust_origin':$('.travCity').first().text().split(' to ')[0],
+             'cust_destination':$('.travelCity').first().text().split(' to ')[1]
+         }]);
+     }
+     else{
+         _taq.events.push(['booking_info',{
+             'cust_name':$('#NAMET1').val(),
+             'booking_type':'one way',
+             'booking_date':$('.travDate').first().text(),
+             'cust_origin':$('.travCity').first().text().split(' to ')[0],
+             'cust_destination':$('.travCity').first().text().split(' to ')[1]
+         }]);
+     }
+ });
+}]);
 }
 if(location.pathname=='/Booking/CustInfo.aspx' && location.host=='www.redbus.in'){
-  _taq.handlers.push(['ready',function(){
-    $(document).on('click','#applyOffer',function(){
-      var ctime = setTimeout(function(){
-        _taq.events.push(['coupon',{'message':$('#specialOfferMessage').text()}]);
-        },3000);
-    });
-  }]);
+_taq.handlers.push(['ready',function(){
+ $(document).on('click','#applyOffer',function(){
+   var ctime = setTimeout(function(){
+     _taq.events.push(['coupon',{'message':$('#specialOfferMessage').text()}]);
+     },3000);
+ });
+}]);
 }*/
 
       //Home page banner for mobile
@@ -382,9 +382,9 @@ if(location.pathname=='/Booking/CustInfo.aspx' && location.host=='www.redbus.in'
       ]);
       /*
 _taq.handlers.push(['event','bus_searched',function(ev){
-  ev[1]['search_results']=parseInt(_taq.$('.bus-items> li').length);
-  parseInt(_taq.$('.bus-list> li ').length);
-  return ev;
+ev[1]['search_results']=parseInt(_taq.$('.bus-items> li').length);
+parseInt(_taq.$('.bus-list> li ').length);
+return ev;
 }]); */
 
       // Email Capture for Hotels-web
@@ -524,13 +524,13 @@ _taq.handlers.push(['event','bus_searched',function(ev){
                   }
                 });
               /*$('.modalIframe').contents().find('#signIn').find('#mobileNoInp').on('blur', function() {
-        var mobile=$('.modalIframe').contents().find('#signIn').find('#mobileNoInp').val().trim();
-        console.log('Mobile - ',mobile);
-        if (mobile.length == 10) {
-          _taq.property.push(['mobile', mobile]);
-          console.log('Through CES - ',_taq.vid);
-        }
-      });*/
+     var mobile=$('.modalIframe').contents().find('#signIn').find('#mobileNoInp').val().trim();
+     console.log('Mobile - ',mobile);
+     if (mobile.length == 10) {
+       _taq.property.push(['mobile', mobile]);
+       console.log('Through CES - ',_taq.vid);
+     }
+   });*/
 
               clearInterval(setintvl);
             }
@@ -767,13 +767,13 @@ _taq.handlers.push(['event','bus_searched',function(ev){
       }
 
       /*_taq.handlers.push(['event','started session', function(ev){
-  if(ev[1]['IP'] == "183.82.114.14"){
-    ev[1]['location'] = "Singapore - Central Singapore Community Development Council, Singapore";
-    return ev;
-  }
-  else{
-  return ev;
-  }
+if(ev[1]['IP'] == "183.82.114.14"){
+ ev[1]['location'] = "Singapore - Central Singapore Community Development Council, Singapore";
+ return ev;
+}
+else{
+return ev;
+}
 }]);*/
 
       //Hiding Notifications when custinfo slide popup.
@@ -981,8 +981,8 @@ _taq.handlers.push(['event','bus_searched',function(ev){
             $("#__ta_notif_frame_0").css("border-radius", "7px");
             //}]);
             /*if(location.pathname == '/'){
-    $('#__ta_notif_frame_0').css('top','75px');
-  }*/
+ $('#__ta_notif_frame_0').css('top','75px');
+}*/
           },
         ]);
       };
@@ -1038,25 +1038,25 @@ _taq.handlers.push(['event','bus_searched',function(ev){
 
       /*seatsellected in Mobile site
 if(location.hostname == "m.redbus.in"){
-  console.log(location.pathname);
+console.log(location.pathname);
 _taq.handlers.push(['ready', function(){
-   var $ = _taq.$;
-  var x = setInterval(function(){
-    console.log('interval');
-   $('canvas[data-type="lower"]').on('click',function(){
-     clearInterval(x);
-     console.log("seat_selection");
-    var seatnumbers=$('.seat-nos').text().trim();
-    var seatslength=$('.seat-nos').text().trim().split(',').length;
-     if(seatnumbers != ""){
-    _taq.events.push(['seat_selected',{
-                     'seat_numbers':seatnumbers,
-                     'seat_length':seatslength,
-                     'device':'mobile'
-    }]);
-     }
-  });
-    },3000);
+var $ = _taq.$;
+var x = setInterval(function(){
+ console.log('interval');
+$('canvas[data-type="lower"]').on('click',function(){
+  clearInterval(x);
+  console.log("seat_selection");
+ var seatnumbers=$('.seat-nos').text().trim();
+ var seatslength=$('.seat-nos').text().trim().split(',').length;
+  if(seatnumbers != ""){
+ _taq.events.push(['seat_selected',{
+                  'seat_numbers':seatnumbers,
+                  'seat_length':seatslength,
+                  'device':'mobile'
+ }]);
+  }
+});
+ },3000);
 }]);
 }*/
 
@@ -1082,20 +1082,20 @@ _taq.handlers.push(['ready', function(){
       /*var cust_notif = `<head> <style> .popUpWrapper { animation: slideUp 0.2s ease-out; position: fixed; bottom: 0rem; box-shadow: 0 -2px 5px rgb(0 0 0 / 26%); z-index: 1000; background: #f8f9fa; width: 100%; border-radius: 5px 5px 0px 0px; } .topWrapper { padding: 1rem; border-radius: 0.38rem 0.38rem 0rem; background-color: #dae3f3; } .phoneOutline { margin: 1.13rem 1.69rem -1.3rem 1.69rem; padding: 2.25rem 1.13rem 0.00rem 1.13rem; border-radius: 2.50rem 2.50rem 0rem 0rem; background-color: #ffffff; } .phoneLine { width: 2.50rem; height: 0.25rem; border-radius: 0.25rem; background-color: #d8d8d8; margin: auto; } .phoneScreen { height: 7.06rem; padding: 0.44rem 0.50rem 1.06rem 0.50rem; background-color: #4b4b4b; margin-top: 0.7rem; } .allowButton { font-size: 0.88rem; text-transform: uppercase; font-weight: bold; color: white; padding: 0.56rem 5.94rem 0.69rem; border-radius: 0.13rem; background-color: #d84e55; margin: 0.5rem 3.5rem; } .otherButton { font-size: 0.75rem; font-weight: bold; line-height: 1.33; color: #1034d9; margin-top: 1rem; text-transform: uppercase; } .bottomSection { color: #3e3e52; text-align: center; padding: 1rem; background-color: #fff; } .bottomText { font-size: 1rem; } .title { font-weight: bold; margin-bottom: 0.9rem; margin: 1rem 3rem; } .subtext { margin-bottom: 1.5rem; } .dialog_overlay { position: fixed; top: 0; left: 0; height: 100%; z-index: 998; background: rgba(0, 0, 0, 0.54); width: 100%; } .fadein { display: flex; flex-direction: row; justify-content: center; } .fadein img { position: absolute; top: 0; -webkit-animation-name: mymove; -webkit-animation-iteration-count: infinite; -webkit-animation-duration: 10s; animation-name: mymove; animation-iteration-count: infinite; animation-duration: 10s; width: 60%; height: 15%; top: 6rem; border-radius: 0.5rem; margin-top: 0.7rem; } @-webkit-keyframes fade { 0% { opacity: 0; } 20% { opacity: 1; } 33% { opacity: 1; } 53% { opacity: 0; } 100% { opacity: 0; } } @keyframes fade { 0% { opacity: 0; } 20% { opacity: 1; } 33% { opacity: 1; } 53% { opacity: 0; } 100% { opacity: 0; } } #f1 { background-color: #FFF; } #f2 { -webkit-animation-delay: -4s; background-color:#FFF; } #f3 { -webkit-animation-delay: -7s; background-color:#FFF; } @keyframes mymove { 0% {top: 0px; opacity: 0;} 25% {top: 200px; opacity: 0;} 75% {top: 50px; opacity: 0;} 100% {top: 100px; opacity: 1;} } </style></head><body> <div class="wpnotif"> <div class="popUpWrapper"> <div class="topWrapper"> <div class="phoneOutline"> <div class="phoneLine"></div> <div class="phoneScreen"> <div class="fadein"> <img id="f3" src="https://st.redbus.in/images/user-permission/refund_white.svg"> <img id="f2" src="https://st.redbus.in/images/user-permission/chat_white.svg"> <img id="f1" src="https://st.redbus.in/images/user-permission/boarding_white.svg"> </div> </div> </div> </div> <div class="bottomSection"> <div class="bottomText"> <div class="title">We will help you with real-time updates about this trip!</div> <div class="subtext">Allow push Notifications</div> </div> <a onclick="allow_wp()" style="cursor: pointer"><div class="allowButton">Allow</div></a> <a onclick="denied_wp()" style="cursor: pointer"><div class="otherButton">No, Thanks</div></a> </div> </div> <!-- <div id="overlay_id" class="dialog_overlay"></div> --></div></body>`;
 var dwp;
 _taq.handlers.push(["ready",function(){
-  var gmg_url = location.href;
-  dwp = parseInt(_taq.getLSItem("denied_wp"))||0;
-  var wp_status = _taq.getLSItem("webpush_status");
-  if(dwp<=1 && wp_status!="denied" && wp_status!="registered" && Notification.permission!= "denied") {
-    if(gmg_url.includes("/Ticket/ShowTicket") || (gmg_url.includes("/ShowTicket")&&window.location.hostname=='m.redbus.in')) {
-      _taq.$("body").append(cust_notif);
-      var device = _taq.is_mobile?"mobweb":"web";
-      var data = {url:location.href,device};
-      pushEvent("popup_show",data);
-    }
-    if(wp_status == "registered") {
-    	_taq.do_webpush_registration();
-    }
-  };
+var gmg_url = location.href;
+dwp = parseInt(_taq.getLSItem("denied_wp"))||0;
+var wp_status = _taq.getLSItem("webpush_status");
+if(dwp<=1 && wp_status!="denied" && wp_status!="registered" && Notification.permission!= "denied") {
+ if(gmg_url.includes("/Ticket/ShowTicket") || (gmg_url.includes("/ShowTicket")&&window.location.hostname=='m.redbus.in')) {
+   _taq.$("body").append(cust_notif);
+   var device = _taq.is_mobile?"mobweb":"web";
+   var data = {url:location.href,device};
+   pushEvent("popup_show",data);
+ }
+ if(wp_status == "registered") {
+   _taq.do_webpush_registration();
+ }
+};
 }]);*/
 
       function allow_wp() {
@@ -1288,7 +1288,7 @@ _taq.handlers.push(["ready",function(){
     <meta name="robots" content="noodp" />
 
     <link
-      href="/stylesheets/home.8c6f3f2b5bca6ded56972a2cfe6d68d3.bundle.css"
+      href="/stylesheets/home.0e74342927ad1643017607e765cc4339.bundle.css"
       rel="stylesheet"
     />
     <link
@@ -1326,73 +1326,6 @@ _taq.handlers.push(["ready",function(){
       var page = "HOME";
     </script>
 
-    <!--session stack code snippet.to be put in head always-->
-
-    <script async="" src="https://ds-aksb-a.akamaihd.net/aksb.min.js"></script>
-    <script>
-      var w = window;
-      if (
-        w.performance ||
-        w.mozPerformance ||
-        w.msPerformance ||
-        w.webkitPerformance
-      ) {
-        var d = document;
-        (AKSB = w.AKSB || {}),
-          (AKSB.q = AKSB.q || []),
-          (AKSB.mark =
-            AKSB.mark ||
-            function (e, _) {
-              AKSB.q.push(["mark", e, _ || new Date().getTime()]);
-            }),
-          (AKSB.measure =
-            AKSB.measure ||
-            function (e, _, t) {
-              AKSB.q.push(["measure", e, _, t || new Date().getTime()]);
-            }),
-          (AKSB.done =
-            AKSB.done ||
-            function (e) {
-              AKSB.q.push(["done", e]);
-            }),
-          AKSB.mark("firstbyte", new Date().getTime()),
-          (AKSB.prof = {
-            custid: "162190",
-            ustr: "",
-            originlat: "0",
-            clientrtt: "211",
-            ghostip: "23.211.135.236",
-            ipv6: false,
-            pct: "10",
-            clientip: "106.222.47.219",
-            requestid: "673863b",
-            region: "20710",
-            protocol: "h2",
-            blver: 14,
-            akM: "b",
-            akN: "ae",
-            akTT: "O",
-            akTX: "1",
-            akTI: "673863b",
-            ai: "358407",
-            ra: "false",
-            pmgn: "",
-            pmgi: "",
-            pmp: "",
-            qc: "",
-          }),
-          (function (e) {
-            var _ = d.createElement("script");
-            (_.async = "async"), (_.src = e);
-            var t = d.getElementsByTagName("script"),
-              t = t[t.length - 1];
-            t.parentNode.insertBefore(_, t);
-          })(
-            ("https:" === d.location.protocol ? "https:" : "http:") +
-              "//ds-aksb-a.akamaihd.net/aksb.min.js"
-          );
-      }
-    </script>
     <style>
       .jdSLvSQ1kNrJqQ7TbxG6X {
         -webkit-line-clamp: 1;
@@ -1668,10 +1601,10 @@ _taq.handlers.push(["ready",function(){
         border-radius: 2px;
         border: 1px solid rgba(255, 255, 255, 0.5);
         /* 
-  left: 15.3%;
-  right: 15.84%;
-  top: 15.55%;
-  bottom: 22.76%; */
+left: 15.3%;
+right: 15.84%;
+top: 15.55%;
+bottom: 22.76%; */
       }
 
       ._1KxaY0xujW4pzGiLCH0VbY {
@@ -2093,22 +2026,22 @@ _taq.handlers.push(["ready",function(){
     <script
       type="text/javascript"
       async=""
-      src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1064843157/?random=1677437964001&amp;cv=11&amp;fst=1677437964001&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45He32m0&amp;u_w=946&amp;u_h=844&amp;hn=www.googleadservices.com&amp;frm=0&amp;url=https%3A%2F%2Fwww.redbus.in%2F&amp;ref=https%3A%2F%2Fr.search.yahoo.com%2F_ylt%3DAwr1QcfYnftjXHMH8QW7HAx.%3B_ylu%3DY29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny%2FRV%3D2%2FRE%3D1677463128%2FRO%3D10%2FRU%3Dhttps%253a%252f%252fwww.redbus.in%252f%2FRK%3D2%2FRS%3DPxTGBc08Z3auIaUCpBPNwm46rG8-&amp;tiba=Book%20Bus%20Travels%2C%20AC%20Volvo%20Bus%2C%20rPool%20%26%20Bus%20Hire%20-%20redBus%20India&amp;auid=1268181490.1676548350&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B110.0.5481.177%7CNot%2520A(Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B110.0.5481.177&amp;uamb=0&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;rfmt=3&amp;fmt=4"
+      src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1064843157/?random=1678190793034&amp;cv=11&amp;fst=1678190793034&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45He3310&amp;u_w=1536&amp;u_h=864&amp;hn=www.googleadservices.com&amp;frm=0&amp;url=https%3A%2F%2Fwww.redbus.in%2F&amp;ref=https%3A%2F%2Fwww.redbus.in%2F&amp;tiba=Book%20Bus%20Travels%2C%20AC%20Volvo%20Bus%2C%20rPool%20%26%20Bus%20Hire%20-%20redBus%20India&amp;auid=1268181490.1676548350&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B110.0.5481.178%7CNot%2520A(Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B110.0.5481.178&amp;uamb=0&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;rfmt=3&amp;fmt=4"
     ></script>
     <script
       type="text/javascript"
       async=""
-      src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/959777831/?random=1677437964008&amp;cv=11&amp;fst=1677437964008&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45He32m0&amp;u_w=946&amp;u_h=844&amp;hn=www.googleadservices.com&amp;frm=0&amp;url=https%3A%2F%2Fwww.redbus.in%2F&amp;ref=https%3A%2F%2Fr.search.yahoo.com%2F_ylt%3DAwr1QcfYnftjXHMH8QW7HAx.%3B_ylu%3DY29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny%2FRV%3D2%2FRE%3D1677463128%2FRO%3D10%2FRU%3Dhttps%253a%252f%252fwww.redbus.in%252f%2FRK%3D2%2FRS%3DPxTGBc08Z3auIaUCpBPNwm46rG8-&amp;tiba=Book%20Bus%20Travels%2C%20AC%20Volvo%20Bus%2C%20rPool%20%26%20Bus%20Hire%20-%20redBus%20India&amp;auid=1268181490.1676548350&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B110.0.5481.177%7CNot%2520A(Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B110.0.5481.177&amp;uamb=0&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;rfmt=3&amp;fmt=4"
+      src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/959777831/?random=1678190793036&amp;cv=11&amp;fst=1678190793036&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45He3310&amp;u_w=1536&amp;u_h=864&amp;hn=www.googleadservices.com&amp;frm=0&amp;url=https%3A%2F%2Fwww.redbus.in%2F&amp;ref=https%3A%2F%2Fwww.redbus.in%2F&amp;tiba=Book%20Bus%20Travels%2C%20AC%20Volvo%20Bus%2C%20rPool%20%26%20Bus%20Hire%20-%20redBus%20India&amp;auid=1268181490.1676548350&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B110.0.5481.178%7CNot%2520A(Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B110.0.5481.178&amp;uamb=0&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;rfmt=3&amp;fmt=4"
     ></script>
     <script
       type="text/javascript"
       async=""
-      src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/866314126/?random=1677437964012&amp;cv=11&amp;fst=1677437964012&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45He32m0&amp;u_w=946&amp;u_h=844&amp;hn=www.googleadservices.com&amp;frm=0&amp;url=https%3A%2F%2Fwww.redbus.in%2F&amp;ref=https%3A%2F%2Fr.search.yahoo.com%2F_ylt%3DAwr1QcfYnftjXHMH8QW7HAx.%3B_ylu%3DY29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny%2FRV%3D2%2FRE%3D1677463128%2FRO%3D10%2FRU%3Dhttps%253a%252f%252fwww.redbus.in%252f%2FRK%3D2%2FRS%3DPxTGBc08Z3auIaUCpBPNwm46rG8-&amp;tiba=Book%20Bus%20Travels%2C%20AC%20Volvo%20Bus%2C%20rPool%20%26%20Bus%20Hire%20-%20redBus%20India&amp;auid=1268181490.1676548350&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B110.0.5481.177%7CNot%2520A(Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B110.0.5481.177&amp;uamb=0&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;rfmt=3&amp;fmt=4"
+      src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/866314126/?random=1678190793038&amp;cv=11&amp;fst=1678190793038&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45He3310&amp;u_w=1536&amp;u_h=864&amp;hn=www.googleadservices.com&amp;frm=0&amp;url=https%3A%2F%2Fwww.redbus.in%2F&amp;ref=https%3A%2F%2Fwww.redbus.in%2F&amp;tiba=Book%20Bus%20Travels%2C%20AC%20Volvo%20Bus%2C%20rPool%20%26%20Bus%20Hire%20-%20redBus%20India&amp;auid=1268181490.1676548350&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B110.0.5481.178%7CNot%2520A(Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B110.0.5481.178&amp;uamb=0&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;rfmt=3&amp;fmt=4"
     ></script>
     <script
       type="text/javascript"
       async=""
-      src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/959777831/?random=1677437964027&amp;cv=11&amp;fst=1677437964027&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45He32m0&amp;u_w=946&amp;u_h=844&amp;label=lPawCMGR2wIQp5jUyQM&amp;hn=www.googleadservices.com&amp;frm=0&amp;url=https%3A%2F%2Fwww.redbus.in%2F&amp;ref=https%3A%2F%2Fr.search.yahoo.com%2F_ylt%3DAwr1QcfYnftjXHMH8QW7HAx.%3B_ylu%3DY29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny%2FRV%3D2%2FRE%3D1677463128%2FRO%3D10%2FRU%3Dhttps%253a%252f%252fwww.redbus.in%252f%2FRK%3D2%2FRS%3DPxTGBc08Z3auIaUCpBPNwm46rG8-&amp;tiba=Book%20Bus%20Travels%2C%20AC%20Volvo%20Bus%2C%20rPool%20%26%20Bus%20Hire%20-%20redBus%20India&amp;auid=1268181490.1676548350&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B110.0.5481.177%7CNot%2520A(Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B110.0.5481.177&amp;uamb=0&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;data=travel_pagetype%3Dhome&amp;rfmt=3&amp;fmt=4"
+      src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/959777831/?random=1678190793045&amp;cv=11&amp;fst=1678190793045&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45He3310&amp;u_w=1536&amp;u_h=864&amp;label=lPawCMGR2wIQp5jUyQM&amp;hn=www.googleadservices.com&amp;frm=0&amp;url=https%3A%2F%2Fwww.redbus.in%2F&amp;ref=https%3A%2F%2Fwww.redbus.in%2F&amp;tiba=Book%20Bus%20Travels%2C%20AC%20Volvo%20Bus%2C%20rPool%20%26%20Bus%20Hire%20-%20redBus%20India&amp;auid=1268181490.1676548350&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B110.0.5481.178%7CNot%2520A(Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B110.0.5481.178&amp;uamb=0&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;data=travel_pagetype%3Dhome&amp;rfmt=3&amp;fmt=4"
     ></script>
   </head>
   <body>
@@ -2836,23 +2769,23 @@ _taq.handlers.push(["ready",function(){
                         </div>
                       </div>
                       <!--<div class="opi rest1">
-                        <span>
-                            <a href=https://itunes.apple.com/in/app/redbus/id733712604?mt=8 target="_blank">
-                                <img src=//s2.rdbuz.com/web/images/home/sgp/iPhone_download.png />
-                            </a>
-                        </span>
-                        <span>
-                            <a href=https://play.google.com/store/apps/details?id=in.redbus.android&amp;hl=en target="_blank">
-                                <img src=//s3.rdbuz.com/web/images/home/sgp/Google_download.png />
-                            </a>
-                           
-                        </span>
-                        <span>
-                            <a target="_blank">
-                                <img />
-                            </a>
-                        </span> 
-                    </div>-->
+                     <span>
+                         <a href=https://itunes.apple.com/in/app/redbus/id733712604?mt=8 target="_blank">
+                             <img src=//s2.rdbuz.com/web/images/home/sgp/iPhone_download.png />
+                         </a>
+                     </span>
+                     <span>
+                         <a href=https://play.google.com/store/apps/details?id=in.redbus.android&amp;hl=en target="_blank">
+                             <img src=//s3.rdbuz.com/web/images/home/sgp/Google_download.png />
+                         </a>
+                        
+                     </span>
+                     <span>
+                         <a target="_blank">
+                             <img />
+                         </a>
+                     </span> 
+                 </div>-->
                       <div class="opi rest1 app_icons">
                         <a
                           href="https://itunes.apple.com/in/app/redbus/id733712604?mt=8"
@@ -3866,7 +3799,7 @@ _taq.handlers.push(["ready",function(){
       };
       var isRewardsEnabled = true;
       var calendarObj = null;
-      var countryspecificdate = "2023/02/26";
+      var countryspecificdate = "2023/03/07";
       var jsloggerURL = "//logs.redbus.com/logger/postErr";
       var callTripsApi = "True";
       var tripsRequestCount = "10";
@@ -3893,11 +3826,11 @@ _taq.handlers.push(["ready",function(){
             };
           }
           /*var http = new XMLHttpRequest();
-                var url = jsloggerURL;
-                var params = JSON.stringify(message);
-                http.open("POST", url, true);
-                http.setRequestHeader("Content-type", "application/json");
-                http.send(params);*/
+             var url = jsloggerURL;
+             var params = JSON.stringify(message);
+             http.open("POST", url, true);
+             http.setRequestHeader("Content-type", "application/json");
+             http.send(params);*/
           var http = new XMLHttpRequest();
           var o = "";
           for (var n in message) {
@@ -3945,7 +3878,7 @@ _taq.handlers.push(["ready",function(){
 
       if (isbrowserfp) {
         const filepath =
-          "/javascripts/BrowserFP.6a7b984e5c43fe5e1f11.bundle.js";
+          "/javascripts/BrowserFP.0cc11ea319f50d81eb95.bundle.js";
         const fileref = document.createElement("script");
         const head = document.getElementsByTagName("head")[0];
         fileref.setAttribute("type", "text/javascript");
@@ -4085,11 +4018,11 @@ _taq.handlers.push(["ready",function(){
       });
     </script>
     <script
-      src="/javascripts/vendor.9a76322eae5099df65ea.bundle.js?root=rbus"
+      src="/javascripts/vendor.c39c8b3a8910fb8ada5d.bundle.js?root=rbus"
       type="text/javascript"
     ></script>
     <script
-      src="/javascripts/layout.9cc099e201af0a158b15.bundle.js?root=rbus"
+      src="/javascripts/layout.917bb7a532af8373cf35.bundle.js?root=rbus"
       type="text/javascript"
     ></script>
 
@@ -5484,8 +5417,8 @@ _taq.handlers.push(["ready",function(){
             BGD: "6.0",
             PER: "-5.0",
           },
-          LocalTime: "2023-02-26T23:28:57.4731423Z",
-          currentDate: "2023/02/26",
+          LocalTime: "2023-03-07T17:36:32.3562749Z",
+          currentDate: "2023/03/07",
           jsloggerURL: "//logs.redbus.com/logger/postErr",
           abCodeEnabled: false,
           IsLangRt: false,
@@ -5567,7 +5500,7 @@ _taq.handlers.push(["ready",function(){
     </script>
 
     <script
-      src="/javascripts/home.c423c7ce3494986f8771.bundle.js"
+      src="/javascripts/home.3bd69a0990b7648e2d99.bundle.js"
       type="text/javascript"
     ></script>
     <div
@@ -5579,7 +5512,7 @@ _taq.handlers.push(["ready",function(){
         <tbody>
           <tr class="rb-monthHeader">
             <td class="prev"><button class="hide">&lt;</button></td>
-            <td class="monthTitle" colspan="5">Feb 2023</td>
+            <td class="monthTitle" colspan="5">Mar 2023</td>
             <td class="next"><button>&gt;</button></td>
           </tr>
           <tr>
@@ -5602,37 +5535,37 @@ _taq.handlers.push(["ready",function(){
           </tr>
           <tr>
             <td class="past day">6</td>
-            <td class="past day">7</td>
-            <td class="past day">8</td>
-            <td class="past day">9</td>
-            <td class="past day">10</td>
-            <td class="past day">11</td>
-            <td class="past day">12</td>
+            <td class="current day">7</td>
+            <td class="wd day">8</td>
+            <td class="wd day">9</td>
+            <td class="wd day">10</td>
+            <td class="we day">11</td>
+            <td class="we day">12</td>
           </tr>
           <tr>
-            <td class="past day">13</td>
-            <td class="past day">14</td>
-            <td class="past day">15</td>
-            <td class="past day">16</td>
-            <td class="past day">17</td>
-            <td class="past day">18</td>
-            <td class="past day">19</td>
+            <td class="wd day">13</td>
+            <td class="wd day">14</td>
+            <td class="wd day">15</td>
+            <td class="wd day">16</td>
+            <td class="wd day">17</td>
+            <td class="we day">18</td>
+            <td class="we day">19</td>
           </tr>
           <tr>
-            <td class="past day">20</td>
-            <td class="past day">21</td>
-            <td class="past day">22</td>
-            <td class="past day">23</td>
-            <td class="past day">24</td>
-            <td class="past day">25</td>
-            <td class="current day">26</td>
+            <td class="wd day">20</td>
+            <td class="wd day">21</td>
+            <td class="wd day">22</td>
+            <td class="wd day">23</td>
+            <td class="wd day">24</td>
+            <td class="we day">25</td>
+            <td class="we day">26</td>
           </tr>
           <tr>
             <td class="wd day">27</td>
             <td class="wd day">28</td>
-            <td class="empty day"></td>
-            <td class="empty day"></td>
-            <td class="empty day"></td>
+            <td class="wd day">29</td>
+            <td class="wd day">30</td>
+            <td class="wd day">31</td>
             <td class="empty day"></td>
             <td class="empty day"></td>
           </tr>
@@ -5648,11 +5581,6 @@ _taq.handlers.push(["ready",function(){
         </tbody>
       </table>
     </div>
-    <script
-      src="/javascripts/adtech.851daaf60417efc1bc8c.bundle.js"
-      type="text/javascript"
-    ></script>
-
     <script type="text/javascript" id="">
       try {
         if ("function" != typeof tvc_setCookie)
@@ -5768,6 +5696,11 @@ _taq.handlers.push(["ready",function(){
           "\x26page\x3dhttps:\/\/www.redbus.in\/\x26GTM\x3dGTM-TCFTX7\x26sheetname\x3dSheet1";
       }
     </script>
+    <script
+      src="/javascripts/adtech.6178074d10688d4dd1ea.bundle.js"
+      type="text/javascript"
+    ></script>
+
     <div style="display: none; visibility: hidden">
       <script type="text/javascript">
         var _taq = {
